@@ -1,14 +1,13 @@
-import javax.swing.JOptionPane;
-
 import org.opentutorials.iot.Elevator;
 import org.opentutorials.iot.Security;
 import org.opentutorials.iot.Lighting;
 import org.opentutorials.iot.DimmingLights;
 
 public class OKJavaGoInHomeInput {
+    // parameter, 매개변수
     public static void main(String[] args) {
-        String id = JOptionPane.showInputDialog("Enter your ID");
-        String bright = JOptionPane.showInputDialog("Enter your bright level");
+        String id = args[0];
+        String bright = args[1];
     
         // Call elevator
         Elevator elevator = new Elevator(id);
