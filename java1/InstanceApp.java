@@ -11,6 +11,10 @@ public class InstanceApp {
         p2.write("Hello 2");
         p2.close();
 
+        System.out.println(p1.toString());
+        p2.toString();
+        p2.write("hello 2");
+
         // PrintWriter.write("result1.txt", "Hello 1");
         // PrintWriter.write("result2.txt", "Hello 2");
         // PrintWriter.write("result1.txt", "Hello 1");
