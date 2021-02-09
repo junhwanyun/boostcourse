@@ -1,16 +1,19 @@
 public class WhyMethodApp {
     public static void main(String[] args) {
         // 100000000
-        printTwoTimesA();
+        printTwoTimes("a", "-");
         // 100000000
-        printTwoTimesA();
+        printTwoTimes("a", "*");
         // 100000000
-        printTwoTimesA();
+        printTwoTimes("a", "&");
+        // argument(인자)
+        printTwoTimes("b", "!");
     }
 
-    public static void printTwoTimesA() {
-        System.out.println("-");
-        System.out.println("A");
-        System.out.println("A");
+    // parameter(매개변수)
+    public static void printTwoTimes(String str, String dlmtr) {
+        System.out.println(dlmtr);
+        System.out.println(str);
+        System.out.println(str);
     }
 }
